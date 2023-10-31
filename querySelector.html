@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="meuID">Este é um elemento com ID</div>
+    <p class="paragrafo">Este é um paragrafo com uma classe</p>
+
+    <script>
+        //Seleciona o elemento com o ID 'meuID'
+        const elementId = document.querySelector('#meuID')
+        elementId.style.color = 'blue'
+
+        //Seleciona primeiro elemento de classe 'paragrafo'
+        const elementClass = document.querySelector('.paragrafo')
+        elementClass.style.fontWeight = 'bold'
+    </script>
+</body>
+</html>
