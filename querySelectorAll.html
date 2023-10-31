@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p>paragrafo 1 dentro do container</p>
+        <p>paragrafo 2 dentro do container</p>
+    </div>
+    <p>paragarfo fora do container</p>
+
+    <script>
+        //Seleciona os paragrafos dentro da div com a classe container
+        const paragrafos = document.querySelectorAll('. container p')
+
+        //Modifica diretamente os estilos dos paragrafos selecionados
+        paragrafos.forEach(paragrafo => {
+            paragrafo.style.fontWeight = 'bold';
+        })
+    </script>
+</body>
+</html>
